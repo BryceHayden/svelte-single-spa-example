@@ -1,0 +1,22 @@
+<single-spa-router>
+  <nav>
+    <application name="@bryce/navbar"></application>
+  </nav>
+  <main>
+    <route exact path="/">
+      <application name="@bryce/login"></application>
+    </route>
+    <route path="home">
+      <application name="@bryce/homepage"></application>
+    </route>
+    <route path="admin">
+      <application name="@bryce/admin"></application>
+    </route>
+    <route path="profile">
+      <application name="@bryce/profile"></application>
+    </route>
+    <route default>
+      <div>Page Not Found</div>
+    </route>
+  </main>
+</single-spa-router>
